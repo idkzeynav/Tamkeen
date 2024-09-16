@@ -14,7 +14,8 @@ const DashboardHeader = () => {
             <div>
                 <Link to="/dashboard">
                     <img
-                        src="https://shopo.quomodothemes.website/assets/images/logo.svg"
+                          src="/images/tamk.png"
+                          style={{ width: '150px', height: '70px' }} 
                         alt=""
                     />
                 </Link>
