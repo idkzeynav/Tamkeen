@@ -25,8 +25,8 @@ const ProfileSidebar = ({ active, setActive }) => {
       .get(`${server}/user/logout`, { withCredentials: true })
       .then((res) => {
         toast.success(res.data.message);
-        window.location.reload(true);
-        navigate("/login");
+        //window.location.reload(true);
+        navigate("/");
       })
       .catch((error) => {
         console.log(error.response.data.message);
@@ -165,7 +165,7 @@ const ProfileSidebar = ({ active, setActive }) => {
             active === 8 ? "text-[red]" : ""
           } 800px:block hidden`}
         >
-          loguot
+          logout
         </span>
       </div>
     </div>
