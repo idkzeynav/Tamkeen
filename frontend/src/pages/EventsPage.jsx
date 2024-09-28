@@ -18,7 +18,7 @@ const EventsPage = () => {
               <EventCard key={event.id} active={true} data={event} />
             ))
           ) : (
-            <p>No events available.</p>
+            <p>No online Workshops available.</p>
           )}
         </div>
       )}

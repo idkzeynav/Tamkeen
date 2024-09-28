@@ -114,6 +114,7 @@ const Footer = () => {
                 <span>© 2024 Tamkeen. All rights reserved.</span>
                 <span>Terms · Privacy Policy</span>
                
+               
             </div>
         </div>
     );

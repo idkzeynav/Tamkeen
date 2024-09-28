@@ -1,7 +1,6 @@
-import React from 'react'
+import React from 'react';
 import { Link } from "react-router-dom";
 import styles from "../../../styles/styles";
-
 
 const Hero = () => {
     return (   
@@ -34,16 +33,14 @@ const Hero = () => {
                 <Link to="/products" className="inline-block">
                     <div className={`${styles.button} mt-5`}>
                         <span className="text-[#fff] font-[Poppins] text-[18px]">
-                            Shop Now
+                            Explore Now
                         </span>
                     </div>
                 </Link>
-
             </div>
-
         </div>
-    )
-}
+    );
+};
 
 export default Hero
 // import React from 'react';
