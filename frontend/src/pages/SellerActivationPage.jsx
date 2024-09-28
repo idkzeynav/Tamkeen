@@ -38,9 +38,9 @@ const SellerActivationPage = () => {
             }}>
             {
                 error ? (
-                    <p className='text-red-800'>Your toke is expair </p>
+                    <p className='text-red-800'>Your token has expired </p>
                 ) : (
-                    <p className='text-green-800'>Your Account has been created sucess fully!</p>
+                    <p className='text-green-800'>Your Account has been created sucessfully!</p>
                 )
             }
 

@@ -13,7 +13,7 @@ export const navItems = [
     url: "/products",
   },
   {
-    title: "Events",
+    title: "Workshops",
     url: "/events",
   },
   {
@@ -26,8 +26,8 @@ export const navItems = [
 export const brandingData = [
   {
     id: 1,
-    title: "Free Shipping",
-    Description: "From all orders over 100$",
+    title: "Free Online Trainings",
+    Description: "for everyone",
     icon: (
       <svg
         width="36"
@@ -76,8 +76,8 @@ export const brandingData = [
   },
   {
     id: 2,
-    title: "Daily Surprise Offers",
-    Description: "Save up to 25% off",
+    title: "Step towards a brighter a better future",
+    Description: "Learn and Earn with us",
     icon: (
       <svg
         width="32"
@@ -105,7 +105,7 @@ export const brandingData = [
   {
     id: 4,
     title: "Affortable Prices",
-    Description: "Get Factory direct price",
+    Description: "Get reasonable price",
     icon: (
       <svg
         width="32"
@@ -150,33 +150,44 @@ export const brandingData = [
     ),
   },
   {
-    id: 5,
-    title: "Secure Payments",
-    Description: "100% protected payments",
+    id: 3,
+    title: "Forums",
+    Description: "Share Your Experiences Together",
     icon: (
       <svg
         width="32"
-        height="38"
-        viewBox="0 0 32 38"
+        height="35"
+        viewBox="0 0 32 35"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          d="M22.6654 18.667H9.33203V27.0003H22.6654V18.667Z"
+          d="M7 13H5.5C2.95 13 1 11.05 1 8.5V1H7"
+          stroke="#FFBB38"
+          stroke-width="2"
+          stroke-miterlimit="10"
+        ></path>
+        <path
+          d="M25 13H26.5C29.05 13 31 11.05 31 8.5V1H25"
+          stroke="#FFBB38"
+          stroke-width="2"
+          stroke-miterlimit="10"
+        ></path>
+        <path
+          d="M16 28V22"
+          stroke="#FFBB38"
+          stroke-width="2"
+          stroke-miterlimit="10"
+        ></path>
+        <path
+          d="M16 22C11.05 22 7 17.95 7 13V1H25V13C25 17.95 20.95 22 16 22Z"
           stroke="#FFBB38"
           stroke-width="2"
           stroke-miterlimit="10"
           stroke-linecap="square"
         ></path>
         <path
-          d="M12.668 18.6663V13.6663C12.668 11.833 14.168 10.333 16.0013 10.333C17.8346 10.333 19.3346 11.833 19.3346 13.6663V18.6663"
-          stroke="#FFBB38"
-          stroke-width="2"
-          stroke-miterlimit="10"
-          stroke-linecap="square"
-        ></path>
-        <path
-          d="M31 22C31 30.3333 24.3333 37 16 37C7.66667 37 1 30.3333 1 22V5.33333L16 2L31 5.33333V22Z"
+          d="M25 34H7C7 30.7 9.7 28 13 28H19C22.3 28 25 30.7 25 34Z"
           stroke="#FFBB38"
           stroke-width="2"
           stroke-miterlimit="10"
@@ -184,14 +195,15 @@ export const brandingData = [
         ></path>
       </svg>
     ),
-  },
+  }
+ 
 ];
 
 // categories data
 export const categoriesData = [
   {
     id: 1,
-    title: "Computers and Laptops",
+    title: "Arts and crafts",
     subTitle: "",
     image_Url:
       "https://cdn.shopify.com/s/files/1/1706/9177/products/NEWAppleMacbookProwithM1ProChip14InchLaptop2021ModelMKGQ3LL_A_16GB_1TBSSD_custommacbd.jpg?v=1659592838",
@@ -223,41 +235,10 @@ export const categoriesData = [
     subTitle: "",
     image_Url:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvBQPQMVNRd6TtDkGs2dCri0Y-rxKkFOiEWw&usqp=CAU",
-  },
-  {
-    id: 6,
-    title: "Gifts",
-    subTitle: "",
-    image_Url:
-      "https://securecdn.pymnts.com/wp-content/uploads/2014/11/Gifts-Photo-700x489.jpg",
-  },
-  {
-    id: 7,
-    title: "Pet Care",
-    subTitle: "",
-    image_Url: "https://cdn.openpr.com/T/c/Tc15444071_g.jpg",
-  },
-  {
-    id: 8,
-    title: "Mobile and Tablets",
-    subTitle: "",
-    image_Url:
-      "https://st-troy.mncdn.com/mnresize/1500/1500/Content/media/ProductImg/original/mpwp3tua-apple-iphone-14-256gb-mavi-mpwp3tua-637986832343472449.jpg",
-  },
-  {
-    id: 9,
-    title: "Music and Gaming",
-    subTitle: "",
-    image_Url:
-      "https://static.vecteezy.com/system/resources/previews/011/996/555/original/3d-black-headphone-illustration-ecommerce-icon-png.png",
-  },
-  {
-    id: 10,
-    title: "Others",
-    subTitle: "",
-    image_Url:
-      "https://searchspring.com/wp-content/uploads/2022/10/Hero-Image-Platform-Others-2.png",
-  },
+  }
+  
+ 
+
 ];
 
 // product Data
@@ -566,14 +547,7 @@ export const productData = [
         url: "https://eratablet.com/wp-content/uploads/2022/08/H51ba6537405f4948972e293927673546u.jpg",
       },
     ],
-    shop: {
-      name: "Asus Ltd",
-      shop_avatar: {
-        public_id: "test",
-        url: "https://www.hatchwise.com/wp-content/uploads/2022/05/amazon-logo-1024x683.png",
-      },
-      ratings: 4.2,
-    },
+    
     price: 300,
     discount_price: 239,
     rating: 4.5,

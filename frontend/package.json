@@ -27,7 +27,7 @@
     "redux-thunk": "^2.4.2",
     "redux-toolkit": "^1.1.2",
     "socket.io-client": "^4.6.1",
-    "timeago.js": "^4.0.2",
+    "timeago.js": "github:hustcc/timeago.js",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -58,5 +58,5 @@
     "autoprefixer": "^10.4.14",
     "postcss": "^8.4.24",
     "tailwindcss": "^3.3.2"
-  }      
+  }
 }

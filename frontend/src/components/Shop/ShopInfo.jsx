@@ -1,19 +1,21 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { Link, useParams, useNavigate } from "react-router-dom"; // Import useNavigate
 import { getAllProductsShop } from "../../redux/actions/product";
 import { backend_url, server } from "../../server";
 import styles from "../../styles/styles";
 import Loader from "../Layout/Loader";
+import { Link, useParams, useNavigate } from "react-router-dom";
+//images-1726313340001-304781224.png
 
 const ShopInfo = ({ isOwner }) => {
     const [data, setData] = useState({});
     const { products } = useSelector((state) => state.products);
     const [isLoading, setIsLoading] = useState(false);
+
     const { id } = useParams();
     const dispatch = useDispatch();
-    const navigate = useNavigate(); // Use navigate hook
+    const navigate = useNavigate();
 
     useEffect(() => {
         dispatch(getAllProductsShop(id));
@@ -24,8 +26,9 @@ const ShopInfo = ({ isOwner }) => {
         }).catch((error) => {
             console.log(error);
             setIsLoading(false);
-        });
-    }, [dispatch, id]);
+        })
+    }, [])
+
 
     const logoutHandler = async () => {
         await axios.get(`${server}/shop/logout`, {
@@ -34,6 +37,7 @@ const ShopInfo = ({ isOwner }) => {
         navigate("/"); // Redirect to home page after logout
     };
 
+
     const totalReviewsLength =
         products &&
         products.reduce((acc, product) => acc + product.reviews.length, 0);
@@ -41,6 +45,8 @@ const ShopInfo = ({ isOwner }) => {
     const totalRatings = products && products.reduce((acc, product) => acc + product.reviews.reduce((sum, review) => sum + review.rating, 0), 0);
 
     const averageRating = totalRatings / totalReviewsLength || 0;
+
+
 
     return (
         <>
